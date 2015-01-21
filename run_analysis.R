@@ -44,8 +44,9 @@ subData <- subset(allData, select = c(1, 2, 3, mean_or_std_index)) ## set, subje
 # 3. Uses descriptive activity names to name the activities in the data set
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", sep = " ", 
                               col.names = c("label", "activity"), stringsAsFactors = TRUE)
-activities <- activity_labels$activity  ## WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS SITTING, STANDING, LAYING
-## change 1,2,3,4,5 to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS SITTING, STANDING, LAYING,
+## c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")                             
+activities <- activity_labels$activity  
+## change (1,2,3,4,5,6) to ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
 ## which would make activity more descriptive
 levels(subData$y) <- activities   
 
