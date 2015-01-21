@@ -75,4 +75,9 @@ SQL <- paste("select subject, activity", paste(avgs, collapse = ""), "from temp 
 tidy_data <- sqldf(SQL)
 ## change name to make it maore expressive
 names(tidy_data) <- names(subData)[2:ncol]  ## "set" not included
+# write out tidy_data
 write.table(tidy_data, file = "tidy_data.txt", sep = ",", row.names = FALSE)
+
+
+
+
