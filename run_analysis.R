@@ -61,7 +61,8 @@ names(subData)[names(subData) == "y"] <- "activity"
 library(sqldf)  ## if not installed, install it
 temp <- subData
 ncol <- length(subData) ## 89
-some_colnames <- paste("v", as.character(1: (ncol - 3)), sep = "") ## of course set, subject, activity do not need to change
+## of course set, subject, activity do not need to change
+some_colnames <- paste("v", as.character(1: (ncol - 3)), sep = "") 
 names(temp)[4: ncol] <- some_colnames
 
 ## construct SQL commnand
@@ -73,5 +74,4 @@ SQL <- paste("select subject, activity", paste(avgs, collapse = ""), "from temp 
 tidy_data <- sqldf(SQL)
 ## change name to make it maore expressive
 names(tidy_data) <- names(subData)[2:ncol]  ## "set" not included
-
-
+write.table(tidy_data, file = "tidy_data.txt", sep = ",", row.names = FALSE)
