@@ -1,6 +1,8 @@
 # getdata
-==
-### This is my project on the course "Getting and Cleaning the data", data can be downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, my code is in run_analysis.R, and my result is in tidy_data.analysis.
+===
+### This is my project on the course "Getting and Cleaning the data", data can be downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, my code is in run_analysis.R, and my result is in tidy_data.analysis.  
+===
+### Below is how I clean the data
 
 1. read "features.txt"" using read.table, col.names = c("id", "feature"), assign features to the result, assign X_name = features$feature, I would assign names of X_test and X_train to be X_name later
 
