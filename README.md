@@ -8,7 +8,7 @@ This is my project on the course "Getting and Cleaning the data", data can be do
 1. read "features.txt"" using read.table, col.names = c("id", "feature"), assign features to the result, assign X_name = features$feature, I would assign names of X_test and X_train to be X_name later
   
 2. read "subject_test.txt" using read.table, col.names = "subject", colClasses = "factor", assign subject_test to the result
-3. read "X_test.txt" using read.fwf, col.names = X_name, assign X_test to the result
+3. read "X_test.txt" using read.fwf, col.names = X_name, assign X_test to the result (Note that read.fwf allow us to read fixed width format file)
 4. read "y_test.txt" using read.table, col.names = "y", colClasses = "factor", assign y_test to the result
   
 5. read "subject_train.txt" using read.table, col.names = "subject", colClasses = "factor", assign subject_train to the result
