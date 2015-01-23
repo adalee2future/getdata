@@ -1,7 +1,7 @@
 # getdata
 
 ### Introduction
-This is my project on the course "Getting and Cleaning the data", data can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), my code is in run_analysis.R, and my result is in tidy_data.txt.  
+This is my project on the course [Getting and Cleaning the data](https://www.coursera.org/course/getdata), data can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), my code is in run_analysis.R, and my result is in tidy_data.txt.  
 
 ### Below is how I clean the data
 
